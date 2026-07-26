@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "echo 'dependencies vooraf meegeleverd - install overgeslagen'",
   "buildCommand": "npm run build",
   "outputDirectory": "out",
   "trailingSlash": true,
