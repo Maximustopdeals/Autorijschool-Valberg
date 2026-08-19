@@ -129,7 +129,6 @@ export const geslaagden = [
   { src: '/images/geslaagd-8', alt: 'Jonathan is in één keer geslaagd voor zijn praktijkexamen', caption: 'Jonathan — in één keer geslaagd' },
   { src: '/images/geslaagd-9', alt: 'Kyra Notermans geslaagd bij Autorijschool Valberg', caption: 'Kyra — rijbewijs in de pocket' },
   { src: '/images/geslaagd-10', alt: 'Weer een cursist geslaagd bij Autorijschool Valberg in Valkenburg', caption: 'Weer een cursist geslaagd' },
-  { src: '/images/geslaagd-11', alt: 'Geslaagde leerling van rijschool Valberg bij het examencentrum', caption: 'Rijbewijs gehaald — gefeliciteerd!' },
   { src: '/images/geslaagd-12', alt: 'Trotse geslaagde kandidaat bij de lesauto van rijschool Valberg', caption: 'Trots op onze geslaagden' },
   { src: '/images/geslaagd-13', alt: 'Blije leerling na een geslaagd praktijkexamen in Maastricht', caption: 'Geslaagd bij het CBR Maastricht' },
   { src: '/images/geslaagd-14', alt: 'Geslaagde cursist poseert bij de lesauto van Autorijschool Valberg', caption: 'De weg op met het rijbewijs' },
