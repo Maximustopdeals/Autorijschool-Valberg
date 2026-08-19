@@ -119,7 +119,6 @@ export const homeGeslaagden = [
 //    bijv. geslaagd-40-800.webp en geslaagd-40-480.webp
 // 2. Voeg hieronder een regel toe met src (zonder maat/extensie), alt-tekst en caption
 export const geslaagden = [
-  { src: '/images/geslaagd-1', alt: 'Geslaagde kandidaat van Autorijschool Valberg poseert bij de blauwe lesauto', caption: 'Geslaagd in één keer — gefeliciteerd!' },
   { src: '/images/geslaagd-2', alt: 'Trotse geslaagde leerling voor het CBR examencentrum in Maastricht', caption: 'Rijbewijs behaald bij CBR Maastricht' },
   { src: '/images/geslaagd-3', alt: 'Geslaagde leerling van rijschool Valberg met het examenresultaat', caption: 'Weer een trotse nieuwe bestuurder' },
   { src: '/images/geslaagd-4', alt: 'Geslaagde kandidaat naast de lesauto van Autorijschool Valberg in Valkenburg', caption: 'Van eerste les tot rijbewijs' },
