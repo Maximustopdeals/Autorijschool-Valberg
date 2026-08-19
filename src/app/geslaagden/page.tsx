@@ -58,7 +58,7 @@ export default function GeslaagdenPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-blue-50">
             Niets zegt meer over een rijschool dan de resultaten. Al ruim 45 jaar helpen wij
-            leerlingen uit Valkenburg en omgeving aan hun rijbewijs — hieronder een greep uit onze
+            leerlingen uit Valkenburg en omgeving aan hun rijbewijs. Hieronder een greep uit onze
             trotse geslaagden.
           </p>
         </div>
