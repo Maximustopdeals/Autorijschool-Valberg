@@ -97,7 +97,7 @@ export default function GeslaagdenPage() {
               rijden bestuurders rond die hun rijbewijs bij Autorijschool Valberg hebben gehaald.
               Wat hen bindt? Een persoonlijke aanpak, geduldige begeleiding en een grondige
               voorbereiding op het praktijkexamen bij het CBR in Maastricht. Velen van hen slaagden
-              in één keer — en wij zijn daar net zo trots op als zijzelf.
+              in één keer en wij zijn daar net zo trots op als zijzelf.
             </p>
             <p>
               Word jij onze volgende geslaagde? Begin met een{' '}
