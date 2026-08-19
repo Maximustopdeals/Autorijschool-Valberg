@@ -48,49 +48,55 @@ export default function Footer() {
               </li>
             ))}
             <li>
-              <Link href="/opfriscursus/" className="text-sm text-slate-600 transition-colors hover:text-brand">
-                Opfriscursus
+              <Link href="/tarieven/" className="text-sm text-slate-600 transition-colors hover:text-brand">
+                Tarieven &amp; pakketten
               </Link>
             </li>
             <li>
-              <Link href="/theorie/" className="text-sm text-slate-600 transition-colors hover:text-brand">
-                Theorie-examen
+              <Link href="/faq/" className="text-sm text-slate-600 transition-colors hover:text-brand">
+                Veelgestelde vragen
               </Link>
             </li>
           </ul>
         </nav>
 
-        {/* Regio's */}
+        {/* Regio */}
         <nav aria-label="Footer regio's">
           <h2 className="text-base font-bold text-slate-900">Rijles in de regio</h2>
           <ul className="mt-5 space-y-3">
             {regions.map((r) => (
-              <li key={r.href}>
+              <li key={r.name}>
                 <Link href={r.href} className="text-sm text-slate-600 transition-colors hover:text-brand">
-                  {r.title}
+                  Rijschool {r.name}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/geslaagden/" className="text-sm text-slate-600 transition-colors hover:text-brand">
+                Onze geslaagden
+              </Link>
+            </li>
+            <li>
+              <Link href="/reviews/" className="text-sm text-slate-600 transition-colors hover:text-brand">
+                Reviews van leerlingen
+              </Link>
+            </li>
           </ul>
         </nav>
 
         {/* Contact */}
         <div>
           <h2 className="text-base font-bold text-slate-900">Contact</h2>
-          <ul className="mt-5 space-y-3 text-sm text-slate-600">
+          <ul className="mt-5 space-y-4 text-sm text-slate-600">
             <li className="flex gap-3">
               <svg className="mt-0.5 h-5 w-5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              <span>
-                {site.address.street}
-                <br />
-                {site.address.zip} {site.address.city}
-              </span>
+              <span>{site.street}, {site.zip} {site.city}</span>
             </li>
             <li>
-              <a href={`tel:${site.phoneLink}`} className="flex gap-3 transition-colors hover:text-brand">
+              <a href={site.phoneHref} className="flex gap-3 transition-colors hover:text-brand">
                 <svg className="mt-0.5 h-5 w-5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" />
                 </svg>
