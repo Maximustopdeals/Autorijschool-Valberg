@@ -20,7 +20,7 @@ export const site = {
   facebook: 'https://www.facebook.com/autorijschoolvalberg',
   cbrLink:
     'https://www.cbr.nl/nl/service/nl/reservering-examens-en-rijtesten/machtig-je-opleider-met-je-digid',
-  formspree: 'https://formspree.io/f/mrenynqe',
+  formspree: 'https://formspree.io/f/xoeazkjv',
   tracking: {
     ga4: 'G-2BG0TLR3X7',
     gtm: 'GTM-NRNCDCQL',
