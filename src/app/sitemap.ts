@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/rijschool-maastricht/', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/rijschool-meerssen/', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/rijschool-berg-en-terblijt/', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/rijschool-sittard/', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/geslaagden/', priority: 0.7, changeFrequency: 'weekly' as const },
     { path: '/reviews/', priority: 0.7, changeFrequency: 'weekly' as const },
     { path: '/over-ons/', priority: 0.6, changeFrequency: 'yearly' as const },
