@@ -190,6 +190,7 @@ export const regions = [
   { name: 'Maastricht', href: '/rijschool-maastricht/', text: 'Rijles in Maastricht en examen training rond CBR Geusselt.' },
   { name: 'Meerssen', href: '/rijschool-meerssen/', text: 'Opgehaald en thuisgebracht in heel Meerssen.' },
   { name: 'Berg en Terblijt', href: '/rijschool-berg-en-terblijt/', text: 'Rijlessen vlak bij huis in Berg en Terblijt.' },
+  { name: 'Sittard', href: '/rijschool-sittard/', text: 'Opgehaald en thuisgebracht in heel Sittard.' },
 ] as const;
 
 export const reviews = [
