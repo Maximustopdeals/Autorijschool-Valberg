@@ -16,7 +16,7 @@ export const packages = [
   {
     name: 'Basis Pakket',
     price: '€ 1.650,-',
-    per: '20 lessen + praktijkexamen',
+    per: '20 lessen + TTT + praktijkexamen',
     features: [
       '20 rijlessen van 60 minuten',
       'Inclusief CBR praktijkexamen',
@@ -29,7 +29,7 @@ export const packages = [
   {
     name: 'Standaard Pakket',
     price: '€ 2.225,-',
-    per: '30 lessen + praktijkexamen',
+    per: '30 lessen + TTT + praktijkexamen',
     features: [
       '30 rijlessen van 60 minuten',
       'Inclusief CBR praktijkexamen',
@@ -43,7 +43,7 @@ export const packages = [
   {
     name: 'Premium Pakket',
     price: '€ 2.750,-',
-    per: '40 lessen + praktijkexamen',
+    per: '40 lessen + TTT + praktijkexamen',
     features: [
       '40 rijlessen van 60 minuten',
       'Inclusief CBR praktijkexamen',
