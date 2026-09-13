@@ -7,7 +7,7 @@ import { packages } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Tarieven & lespakketten | Rijschool Valkenburg vanaf € 60,-',
   description:
-    'Bekijk de tarieven van Autorijschool Valberg in Valkenburg: losse lessen € 60,- en complete lespakketten vanaf € 1.650,- inclusief praktijkexamen. Gespreid betalen mogelijk.',
+    'Bekijk de tarieven van Autorijschool Valberg in Valkenburg: losse lessen € 60,- en complete lespakketten vanaf € 1.650,- + TTT inclusief praktijkexamen. Gespreid betalen mogelijk.',
   alternates: { canonical: '/tarieven/' },
 };
 
@@ -16,7 +16,7 @@ export default function TarievenPage() {
     <>
       <PageHero
         title="Tarieven en lespakketten: duidelijk en zonder verrassingen"
-        intro="Bij Autorijschool Valberg betaal je een vaste, lage lesprijs en kies je een pakket dat past bij jouw tempo. Alle pakketten zijn inclusief praktijkexamen — je weet dus precies waar je aan toe bent."
+        intro="Bij Autorijschool Valberg betaal je een vaste, lage lesprijs en kies je een pakket dat past bij jouw tempo. Alle pakketten zijn inclusief TTT en praktijkexamen. Je weet dus precies waar je aan toe bent."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Tarieven' }]}
       />
 
