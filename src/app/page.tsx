@@ -47,7 +47,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
               Rij in stijl. Leer met vertrouwen. Slaag snel. Bij Autorijschool Valberg leer je
-              veilig, ontspannen en zelfverzekerd autorijden, met persoonlijke rijlessen op maat —
+              veilig, ontspannen en zelfverzekerd autorijden, met persoonlijke rijlessen op maat
               afgestemd op jouw tempo en niveau.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
