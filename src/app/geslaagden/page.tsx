@@ -68,27 +68,27 @@ export default function GeslaagdenPage() {
         <div className="container-site">
           <GeslaagdenCarousel />
 
-          {/* Fotogrid */}
-          <div className="mt-14 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
-            {geslaagden.map((g, i) => (
-              <figure key={i} className="overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100">
-                <img
-                  src={`${g.src}-480.webp`}
-                  srcSet={`${g.src}-480.webp 480w, ${g.src}-800.webp 800w`}
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  width={800}
-                  height={533}
-                  alt={g.alt}
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-                <figcaption className="px-4 py-3 text-xs font-medium text-slate-600 sm:text-sm">
-                  {g.caption}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+          {/* Fotogrid — nieuwste geslaagden bovenaan */}
+<div className="mt-14 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
+  {[...geslaagden].reverse().map((g) => (
+    <figure key={g.src} className="overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100">
+      <img
+        src={`${g.src}-480.webp`}
+        srcSet={`${g.src}-480.webp 480w, ${g.src}-800.webp 800w`}
+        sizes="(max-width: 768px) 50vw, 25vw"
+        width={800}
+        height={533}
+        alt={g.alt}
+        loading="lazy"
+        decoding="async"
+        className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+      <figcaption className="px-4 py-3 text-xs font-medium text-slate-600 sm:text-sm">
+        {g.caption}
+      </figcaption>
+    </figure>
+  ))}
+</div>
 
           <article className="prose-seo mx-auto mt-16 max-w-3xl">
             <h2 className="!mt-0">Honderden leerlingen gingen je voor</h2>
