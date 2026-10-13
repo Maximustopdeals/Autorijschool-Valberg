@@ -156,6 +156,7 @@ export const geslaagden = [
   { src: '/images/geslaagd-37', alt: 'Geslaagde leerling na examen bij CBR Maastricht', caption: 'Geslaagd in Maastricht' },
   { src: '/images/geslaagd-38', alt: 'Jasper geslaagd bij Autorijschool Valberg', caption: 'Jasper — geslaagd!' },
   { src: '/images/geslaagd-39', alt: 'Weer een cursist geslaagd bij Autorijschool Valberg', caption: 'Weer een cursist geslaagd' },
+  { src: '/images/geslaagd-40', alt: 'Sten van der Loo geslaagd voor zijn rijbewijs bij Autorijschool Valberg', caption: 'Sten van der Loo — in één keer geslaagd!' },
 ] as const;
 
 export const services = [
