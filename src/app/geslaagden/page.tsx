@@ -23,7 +23,12 @@ export default function GeslaagdenPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://autorijschoolvalberg.nl/' },
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://autorijschoolvalberg.nl/',
+                },
                 { '@type': 'ListItem', position: 2, name: 'Geslaagden' },
               ],
             }),
@@ -45,11 +50,15 @@ export default function GeslaagdenPage() {
           <nav aria-label="Broodkruimelpad" className="mb-5">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-blue-100">
               <li className="flex items-center gap-2">
-                <Link href="/" className="transition-colors hover:text-white">Home</Link>
+                <Link href="/" className="transition-colors hover:text-white">
+                  Home
+                </Link>
               </li>
               <li className="flex items-center gap-2">
                 <span aria-hidden="true">/</span>
-                <span aria-current="page" className="font-semibold text-white">Geslaagden</span>
+                <span aria-current="page" className="font-semibold text-white">
+                  Geslaagden
+                </span>
               </li>
             </ol>
           </nav>
@@ -69,26 +78,29 @@ export default function GeslaagdenPage() {
           <GeslaagdenCarousel />
 
           {/* Fotogrid — nieuwste geslaagden bovenaan */}
-<div className="mt-14 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
-  {[...geslaagden].reverse().map((g) => (
-    <figure key={g.src} className="overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100">
-      <img
-        src={`${g.src}-480.webp`}
-        srcSet={`${g.src}-480.webp 480w, ${g.src}-800.webp 800w`}
-        sizes="(max-width: 768px) 50vw, 25vw"
-        width={800}
-        height={533}
-        alt={g.alt}
-        loading="lazy"
-        decoding="async"
-        className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
-      />
-      <figcaption className="px-4 py-3 text-xs font-medium text-slate-600 sm:text-sm">
-        {g.caption}
-      </figcaption>
-    </figure>
-  ))}
-</div>
+          <div className="mt-14 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
+            {[...geslaagden].reverse().map((g) => (
+              <figure
+                key={g.src}
+                className="overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100"
+              >
+                <img
+                  src={`${g.src}-480.webp`}
+                  srcSet={`${g.src}-480.webp 480w, ${g.src}-800.webp 800w`}
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  width={800}
+                  height={533}
+                  alt={g.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+                <figcaption className="px-4 py-3 text-xs font-medium text-slate-600 sm:text-sm">
+                  {g.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
 
           <article className="prose-seo mx-auto mt-16 max-w-3xl">
             <h2 className="!mt-0">Honderden leerlingen gingen je voor</h2>
