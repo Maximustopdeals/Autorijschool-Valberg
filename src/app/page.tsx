@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { site } from '@/lib/site';
-import { services, homeGeslaagden } from '@/lib/content';
+import { services, geslaagden } from '@/lib/content';
 import ResponsiveImage from '@/components/ResponsiveImage';
 import CtaBand from '@/components/CtaBand';
 
@@ -34,6 +34,10 @@ const quickLinks = [
 ] as const;
 
 export default function HomePage() {
+  // Pak automatisch de 3 nieuwste geslaagden (nieuwste eerst).
+  // Nieuwe foto toevoegen? Voeg deze onderaan 'geslaagden' toe in content.ts.
+  const featuredGeslaagden = [...geslaagden].reverse().slice(0, 3);
+
   return (
     <>
       {/* ============ HERO (LCP) ============ */}
@@ -192,7 +196,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ GESLAAGDEN: 3 BLOKKEN ============ */}
+      {/* ============ GESLAAGDEN: 3 NIEUWSTE BLOKKEN ============ */}
       <section className="py-16 sm:py-24" aria-labelledby="geslaagden-titel">
         <div className="container-site">
           <div className="mx-auto max-w-2xl text-center">
@@ -207,8 +211,11 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            {homeGeslaagden.map((g, i) => (
-              <figure key={i} className="overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100">
+            {featuredGeslaagden.map((g) => (
+              <figure
+                key={g.src}
+                className="overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100"
+              >
                 <img
                   src={`${g.src}-800.webp`}
                   srcSet={`${g.src}-480.webp 480w, ${g.src}-800.webp 800w`}
@@ -220,7 +227,9 @@ export default function HomePage() {
                   decoding="async"
                   className="aspect-[4/3] w-full object-cover"
                 />
-                <figcaption className="px-5 py-4 text-sm font-medium text-slate-700">{g.caption}</figcaption>
+                <figcaption className="px-5 py-4 text-sm font-medium text-slate-700">
+                  {g.caption}
+                </figcaption>
               </figure>
             ))}
           </div>
