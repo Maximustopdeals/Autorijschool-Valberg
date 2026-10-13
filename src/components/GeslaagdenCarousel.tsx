@@ -38,30 +38,28 @@ export default function GeslaagdenCarousel() {
         aria-label="Foto's van geslaagde leerlingen"
         tabIndex={0}
       >
-        {geslaagden.map((g, i) => (
-          <figure
-            key={i}
-            data-card
-            className="w-[260px] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100 sm:w-[300px]"
-          >
-            <img
-              src={`${g.src}-800.webp`}
-              srcSet={`${g.src}-480.webp 480w, ${g.src}-800.webp 800w`}
-              sizes="(max-width: 640px) 260px, 300px"
-              width={800}
-              height={533}
-              alt={g.alt}
-              loading="lazy"
-              decoding="async"
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <figcaption className="px-4 py-3 text-sm font-medium text-slate-700">
-              {g.caption}
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-
+        {[...geslaagden].reverse().map((g) => (
+  <figure
+    key={g.src}
+    data-card
+    className="w-[260px] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100 sm:w-[300px]"
+  >
+    <img
+      src={`${g.src}-800.webp`}
+      srcSet={`${g.src}-480.webp 480w, ${g.src}-800.webp 800w`}
+      sizes="(max-width: 640px) 260px, 300px"
+      width={800}
+      height={533}
+      alt={g.alt}
+      loading="lazy"
+      decoding="async"
+      className="aspect-[4/3] w-full object-cover"
+    />
+    <figcaption className="px-4 py-3 text-sm font-medium text-slate-700">
+      {g.caption}
+    </figcaption>
+  </figure>
+))}
       {/* Bediening */}
       <div className="mt-6 flex items-center justify-center gap-4">
         <button
